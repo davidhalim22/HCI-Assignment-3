@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ultimo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        table,th,td 
+            {
+                border: 1px solid black;
+                border-collapse: collapse;
+                height: 25px;
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: white;
+            }
+        table
+        {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #title
+        {
+            margin: auto;
+            width: 50%;
+            padding: 10px;
+            text-align: center;
+            font-size: 50px;
+        }
+        h2
+        {
+            margin: auto;
+            width: 50%;
+            padding: 5px;
+            text-align: center;
+            height: 15%;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <!-- When click the 3 horizontal lines, it will either tick or untick the check box -->
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbutton">
+            <!-- For adding the 3 horizontal line logo -->
+            <i class="fa fa-bars"></i>
+        </label>
+        <label class="logo">Ultimo</label>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a class="active" href="#">Food</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="booking.html">Booking</a></li>
+        </ul>
+    </nav>
+    <section>
+        <h2></h2>
+        <h1 id="title">Menu:</h1>
+
+        <!--this will make the table a little bit wider-->
+        <table style="width: 50%;">
+            <tr>
+                <th>ID</th>
+                <th>Food</th>
+                <th>Prize</th>
+            </tr>
+            <tr>
+                <!--it's to align all the text in the first column to the middle-->
+                <td align="middle">1</td>
+                <td>Lasagna</td>
+                <td>Rp75,000</td>
+            </tr>
+            <tr>
+                <td align="middle">2</td>
+                <td>Spaghetti</td>
+                <td>Rp90,000</td>
+            </tr>
+            <tr>
+                <td align="middle">3</td>
+                <td>Pizza</td>
+                <td>Rp105,000</td>
+            </tr>
+            <tr>
+                <td align="middle">4</td>
+                <td>Steak</td>
+                <td>Rp200,000</td>
+            </tr>
+            <tr>
+                <td align="middle">5</td>
+                <td>Lamb Chops</td>
+                <td>Rp150,000</td>
+            </tr>
+            <tr>
+                <td align="middle">6</td>
+                <td>Oyster</td>
+                <td>Rp90,000</td>
+            </tr>
+            <tr>
+                <!--it is to make the cell in the first column to span at least 3 row and the style is to adjust the font size-->
+                <th rowspan="3" style="font-size: 20px;">Exclusive Food</th>
+                <td>Beef Wellington</td>
+                <td>Rp385,000</td>
+            </tr>
+            <tr>
+                <td>Baked Salmon with Lemon and Dill</td>
+                <td>Rp200,000</td>
+            </tr>
+            <tr>
+                <td>Coq au Vin</td>
+                <td>Rp250,000</td>
+            </tr>
+        </table>
+    </section>
+</body>
+</html>
